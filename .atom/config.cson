@@ -1,0 +1,58 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      paintCursor: true
+      predefinedColor: "Blue"
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-terminal": {}
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "linter-eslint"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "monokai-seti"
+    ]
+  editor:
+    fontFamily: "Operator Mono"
+    fontSize: 12
+    showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "1b959ec4-0014-4b17-0795-8fe0ca40c83d"
+  "keyboard-localization":
+    useKeyboardLayout: "pt_BR"
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "seti-ui":
+    compactView: true
+    themeColor: "Orange"
+  "terminal-plus":
+    core:
+      mapTerminalsTo: "Folder"
+    style: {}
+    toggles:
+      autoClose: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
