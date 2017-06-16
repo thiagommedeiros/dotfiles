@@ -1,0 +1,4 @@
+atom-material-ui@2.0.4
+file-icons@2.1.7
+monokai-seti@0.9.0
+
