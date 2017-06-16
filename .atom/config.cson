@@ -2,10 +2,14 @@
   "atom-material-ui":
     colors:
       abaseColor: "#2196f3"
+      accentColor: "#ff8b2e"
+      genAccent: true
       paintCursor: true
       predefinedColor: "Blue"
+    fonts: {}
     tabs:
       compactTabs: true
+      noTabMinWidth: true
     treeView:
       compactList: true
     ui:
@@ -13,9 +17,10 @@
       panelShadows: true
   "atom-terminal": {}
   core:
+    audioBeep: false
     autoHideMenuBar: true
     disabledPackages: [
-      "linter-eslint"
+      "jslint"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
@@ -24,32 +29,47 @@
       "monokai-seti"
     ]
   editor:
-    fontFamily: "Operator Mono"
-    fontSize: 14
+    fontFamily: "Operator Mono Light"
+    fontSize: 16
+    invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
   "exception-reporting":
     userId: "1b959ec4-0014-4b17-0795-8fe0ca40c83d"
+  "git-plus":
+    commits:
+      verboseCommits: true
   "keyboard-localization":
     useKeyboardLayout: "pt_BR"
+  "linter-eslint":
+    globalNodePath: "/home/thiago/.nvm/versions/node/v6.9.5"
+  "linter-ui-default":
+    showPanel: true
   minimap:
     absoluteMode: true
     adjustAbsoluteModeHeight: true
     plugins:
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
+  "one-dark-ui":
+    fontSize: 12
+    tabSizing: "Maximum"
+  "prettier-atom":
+    prettierOptions:
+      semi: false
   "seti-ui":
     compactView: true
     themeColor: "Orange"
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
+      mapTerminalsToAutoOpen: true
     style: {}
     toggles:
       autoClose: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".blade.html.php.text":
