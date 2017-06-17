@@ -53,6 +53,9 @@ function install() {
   p_red "Installing chrome..."
   sudo apt-get install google-chrome
 
+  p_red "Installing zsh..."
+  sudo apt-get install zsh
+
   p_red "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
