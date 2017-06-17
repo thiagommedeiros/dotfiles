@@ -74,6 +74,7 @@ function install() {
 function copyDotFiles() {
   p_red "Copying dot files..."
   cp .zshrc ~/
+  cp agnoster.zsh-theme ~/.oh-my-zsh/themes/
   cp .gitconfig ~/
   cp .atom/config.cson ~/.atom
   cp .atom/styles.less ~/.atom
