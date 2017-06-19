@@ -19,9 +19,6 @@
   core:
     audioBeep: false
     autoHideMenuBar: true
-    disabledPackages: [
-      "jslint"
-    ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
     themes: [
@@ -30,7 +27,7 @@
     ]
   editor:
     fontFamily: "Operator Mono Light"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
