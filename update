@@ -1,0 +1,19 @@
+#!/bin/bash
+
+GREEN='\033[0;32m'
+NC="\033[0m"
+
+function p_green() {
+  printf "\n${GREEN}$1${NC}\n\n"
+}
+
+function update() {
+  cp ~/.atom/config.cson ${PWD}/.atom/
+  cp ~/.atom/styles.less ${PWD}/.atom/
+  cp ~/.gitconfig ${PWD}
+  cp ~/.zshrc ${PWD}
+  cp ~/.oh-my-zsh/themes/agnoster.zsh-theme ${PWD}
+  p_green "All files have been updated! Commit your changes."
+}
+
+update

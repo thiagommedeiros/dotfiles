@@ -53,6 +53,9 @@ function install() {
   p_red "Installing chrome..."
   sudo apt-get install google-chrome
 
+  p_red "Installing zsh..."
+  sudo apt-get install zsh
+
   p_red "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -71,6 +74,7 @@ function install() {
 function copyDotFiles() {
   p_red "Copying dot files..."
   cp .zshrc ~/
+  cp agnoster.zsh-theme ~/.oh-my-zsh/themes/
   cp .gitconfig ~/
   cp .atom/config.cson ~/.atom
   cp .atom/styles.less ~/.atom
