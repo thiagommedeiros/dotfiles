@@ -1,0 +1,11 @@
+atom-material-ui
+autoclose-html
+busy-signal
+file-icons
+highlight-selected
+intentions
+javascript-snippets
+language-javascript-jsx
+linter
+linter-ui-default
+monokai-seti
