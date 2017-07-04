@@ -14,5 +14,5 @@ alias dk='docker'
 alias dkc='docker-compose'
 
 # Atom Alias
-alias atompkg='apm list --installed --bare > packages.txt'
+alias atompkg='apm list --installed --bare | grep "^[^@]\+" -o > my_atom_packages.txt'
 alias atominstall='apm install --packages-file packages.txt'
