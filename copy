@@ -1,0 +1,27 @@
+#!/bin/bash
+
+GREEN='\033[0;32m'
+RED="\033[0;31m"
+NC="\033[0m"
+
+function p_red() {
+  printf "\n${RED}$1${NC}\n"
+}
+function p_green() {
+  printf "\n${GREEN}$1${NC}\n"
+}
+
+p_red "Copying dot files..."
+sudo cp git/.gitconfig ~/
+sudo cp zsh/.zshrc ~/
+sudo cp zsh/agnoster.zsh-theme ~/.oh-my-zsh/themes
+sudo cp terminator/config ~/.config/terminator
+sudo cp atom/config.cson ~/.atom
+sudo cp atom/styles.less ~/.atom
+sudo touch ~/.gitconfigs
+sudo touch ~/.zshrc
+sudo touch ~/.oh-my-zsh/themes/agnoster.zsh-theme
+sudo touch ~/.config/terminator/config
+sudo touch ~/.atom/config.cson
+sudo touch ~/.atom/styles.less
+p_green "Done!"

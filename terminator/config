@@ -12,5 +12,5 @@
 [profiles]
   [[default]]
     background_image = None
-    font = Droid Sans Mono Dotted for Powerline 10
+    font = Droid Sans Mono Dotted for Powerline 12
     use_system_font = False
