@@ -24,6 +24,22 @@ sudo apt-get install -y nodejs
 p_red "Installing nvm..."
 sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 
+p_red "Installing mongodb..."
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+sudo apt-get install -y mongodb-org
+sudo echo "[Unit]
+Description=High-performance, schema-free document-oriented database
+After=network.target
+
+[Service]
+User=mongodb
+ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/mongodb.service
+sudo systemctl start mongodb
+
 p_red "Installing docker..."
 sudo apt-get install \
     apt-transport-https \
