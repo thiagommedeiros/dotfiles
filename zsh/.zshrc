@@ -16,3 +16,6 @@ alias dkc='docker-compose'
 # Atom Alias
 alias atompkg='apm list --installed --bare | grep "^[^@]\+" -o > my_atom_packages.txt'
 alias atominstall='apm install --packages-file packages.txt'
+
+# Git Alias
+alias gitpurge='git branch --merged | grep -Ev "(\*|master|develop|staging)" | xargs -n 1 git branch -d'
