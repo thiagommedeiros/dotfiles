@@ -8,12 +8,12 @@ function p_green() {
 }
 
 function update() {
-  cp ~/.gitconfig ${PWD}/git
-  cp ~/.zshrc ${PWD}/zsh
-  cp ~/.oh-my-zsh/themes/agnoster.zsh-theme ${PWD}/zsh
-  zp ~/.config/terminator/config ${PWD}/terminator
-  cp ~/.atom/config.cson ${PWD}/atom
-  cp ~/.atom/styles.less ${PWD}/atom
+  sudo cp ~/.gitconfig ../git
+  sudo cp ~/.zshrc ../zsh
+  sudo cp ~/.oh-my-zsh/themes/agnoster.zsh-theme ../zsh
+  sudo cp ~/.config/terminator/config ../terminator
+  sudo cp ~/.atom/config.cson ../atom
+  sudo cp ~/.atom/styles.less ../atom
   p_green "All files have been updated! Commit your changes."
 }
 

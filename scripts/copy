@@ -12,12 +12,13 @@ function p_green() {
 }
 
 p_red "Copying dot files..."
-sudo cp git/.gitconfig ~/
-sudo cp zsh/.zshrc ~/
-sudo cp zsh/agnoster.zsh-theme ~/.oh-my-zsh/themes
-sudo cp terminator/config ~/.config/terminator
-sudo cp atom/config.cson ~/.atom
-sudo cp atom/styles.less ~/.atom
+sudo cp ../git/.gitconfig ~/
+sudo cp ../zsh/.zshrc ~/
+sudo cp ../zsh/agnoster.zsh-theme ~/.oh-my-zsh/themes
+sudo mkdir ~/.config/terminator
+sudo cp ../terminator/config ~/.config/terminator
+sudo cp ../atom/config.cson ~/.atom
+sudo cp ../atom/styles.less ~/.atom
 sudo touch ~/.gitconfigs
 sudo touch ~/.zshrc
 sudo touch ~/.oh-my-zsh/themes/agnoster.zsh-theme
