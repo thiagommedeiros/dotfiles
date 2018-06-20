@@ -11,6 +11,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Docker Alias
 alias dk='docker'
+alias dks='docker stop $(docker ps -a -q)'
+alias dkr='docker rm $(docker ps -a -q)'
 alias dkc='docker-compose'
 
 # Atom Alias

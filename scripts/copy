@@ -17,12 +17,16 @@ sudo cp ../zsh/.zshrc ~/
 sudo cp ../zsh/agnoster.zsh-theme ~/.oh-my-zsh/themes
 sudo mkdir ~/.config/terminator
 sudo cp ../terminator/config ~/.config/terminator
-sudo cp ../atom/config.cson ~/.atom
-sudo cp ../atom/styles.less ~/.atom
+sudo cp ../vscode/keybindings.json ~/.config/Code/User
+sudo cp ../vscode/settings.json ~/.config/Code/User
+# sudo cp ../atom/config.cson ~/.atom
+# sudo cp ../atom/styles.less ~/.atom
 sudo touch ~/.gitconfigs
 sudo touch ~/.zshrc
 sudo touch ~/.oh-my-zsh/themes/agnoster.zsh-theme
 sudo touch ~/.config/terminator/config
-sudo touch ~/.atom/config.cson
-sudo touch ~/.atom/styles.less
+sudo cp ~/.config/Code/User
+sudo touch ~/.config/Code/User
+# sudo touch ~/.atom/config.cson
+# sudo touch ~/.atom/styles.less
 p_green "Done!"

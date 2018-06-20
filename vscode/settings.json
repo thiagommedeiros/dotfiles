@@ -1,0 +1,23 @@
+{
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "'Operator Mono Light', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.minimap.maxColumn": 80,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "window.menuBarVisibility": "default",
+    "editor.rulers": [
+        80
+    ],
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true
+}
