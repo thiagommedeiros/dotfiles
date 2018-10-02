@@ -114,6 +114,10 @@ sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update
 sudo apt-get install terminator
 
+p_red "Installing hyper js..."
+sudo apt-get install gdebi
+sudo wget https://hyper-updates.now.sh/download/linux_deb
+
 p_red "Installing zsh..."
 sudo apt-get install zsh
 chsh -s $(which zsh)

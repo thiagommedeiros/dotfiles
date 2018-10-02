@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bash ./install
-bash ./copy
+bash ./scripts/install
+bash ./scripts/copy
