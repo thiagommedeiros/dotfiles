@@ -8,12 +8,11 @@ function p_green() {
 }
 
 function update() {
-  sudo cp ~/.gitconfig ../git
-  sudo cp ~/.zshrc ../zsh
-  sudo cp ~/.oh-my-zsh/themes/agnoster.zsh-theme ../zsh
-  sudo cp ~/.config/terminator/config ../terminator
-  sudo cp ~/.atom/config.cson ../atom
-  sudo cp ~/.atom/styles.less ../atom
+  sudo cp ~/.gitconfig ./git
+  sudo cp ~/.zshrc ./zsh
+  sudo cp ~/.oh-my-zsh/themes/agnoster.zsh-theme ./zsh
+  sudo cp ~/.config/terminator/config ./terminator
+  sudo cp ~/.config/Code/User/settings.json ./vscode
   p_green "All files have been updated! Commit your changes."
 }
 

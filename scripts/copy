@@ -7,26 +7,27 @@ NC="\033[0m"
 function p_red() {
   printf "\n${RED}$1${NC}\n"
 }
+
 function p_green() {
   printf "\n${GREEN}$1${NC}\n"
 }
 
 p_red "Copying dot files..."
+
 sudo cp ../git/.gitconfig ~/
 sudo cp ../zsh/.zshrc ~/
 sudo cp ../zsh/agnoster.zsh-theme ~/.oh-my-zsh/themes
+
 sudo mkdir ~/.config/terminator
 sudo cp ../terminator/config ~/.config/terminator
-sudo cp ../vscode/keybindings.json ~/.config/Code/User
 sudo cp ../vscode/settings.json ~/.config/Code/User
-# sudo cp ../atom/config.cson ~/.atom
-# sudo cp ../atom/styles.less ~/.atom
-sudo touch ~/.gitconfigs
+
+sudo touch ~/.gitconfig
 sudo touch ~/.zshrc
 sudo touch ~/.oh-my-zsh/themes/agnoster.zsh-theme
 sudo touch ~/.config/terminator/config
+
 sudo cp ~/.config/Code/User
 sudo touch ~/.config/Code/User
-# sudo touch ~/.atom/config.cson
-# sudo touch ~/.atom/styles.less
+
 p_green "Done!"
